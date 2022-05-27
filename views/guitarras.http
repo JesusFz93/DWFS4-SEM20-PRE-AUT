@@ -1,0 +1,32 @@
+@api = http://localhost:4006/api
+@id = 218
+
+### obtener guitarras
+{{api}}/obtener-guitarras
+
+#### crear guitarra
+POST {{api}}/crear-guitarra
+Content-Type: application/json
+
+{
+    "nombre": "Guitarra electrica",
+    "precio": 10
+}
+
+### actualizar guitarra 
+PUT {{api}}/actualizar-guitarra
+Content-Type: application/json
+
+{
+    "id": "629136dc33de1941ff49c3fa",
+    "nombre": "Guitarra electrica",
+    "precio": 2
+}
+
+### eliminar guitarra 
+DELETE {{api}}/borrar-guitarra
+Content-Type: application/json
+
+{
+    "id": "629136dc33de1941ff49c3fa"
+}
